@@ -9,8 +9,8 @@ user = input('Who to bot? : ')
 def Analytics_Bot():
     while True:
         r = requests.get(f'https://solo.to/{user}', headers=headers)
-        print(r.status_code)
 try:
+      print('Sending views...')
       threads = []
       for i in range(20):
                 t = threading.Thread(target=Analytics_Bot)
